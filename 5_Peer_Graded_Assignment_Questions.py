@@ -26,9 +26,7 @@ airline_data =  pd.read_csv('https://cf-courses-data.s3.us.cloud-object-storage.
 year_list = [i for i in range(2005, 2021, 1)]
 
 """Compute graph data for creating yearly airline performance report 
-
 Function that takes airline data as input and create 5 dataframes based on the grouping condition to be used for plottling charts and grphs.
-
 Argument:
      
     df: Filtered dataframe
@@ -51,9 +49,7 @@ def compute_data_choice_1(df):
 
 
 """Compute graph data for creating yearly airline delay report
-
 This function takes in airline data and selected year as an input and performs computation for creating charts and plots.
-
 Arguments:
     df: Input airline data.
     
@@ -97,7 +93,7 @@ app.layout = html.Div(children=[
                                                                     {'label': 'Yearly Airline Delay Report', 'value': 'OPT2'}
                                                                     ],
                                                             placeholder='Select a report type',
-                                                            style={'width':'80%','padding':3,'font-size':20,'textAlign-last':'center'})
+                                                            style={'width':'80%','padding':'3px','font-size':'20px','text-align-last':'center'})
 
                                     # Place them next to each other using the division style
                                     ], style={'display':'flex'}),
